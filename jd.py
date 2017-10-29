@@ -10,8 +10,6 @@ def jd(yyyy, mm, dd):
     Julian Date
     Continuous count of days and fractions since noon UT on January 1, 4713 BC
     Meeus, p.28
-    Note that USNO does no account for year 0 (between 1 BC and 1 AD), and, therefore is smaller by 365
-    http://aa.usno.navy.mil/data/docs/JulianDate.php
     :param yyyy: negative, positive or 0
     :param mm: 1 to 12
     :param dd: 0.0 to 31.99
@@ -54,7 +52,6 @@ def jd(yyyy, mm, dd):
 def mjd(jul_date):
     """
     Returns Modified Julian Date
-    http://aa.usno.navy.mil/data/docs/JulianDate.php
     :param jul_date: Julian Date
     :return: Modified Julian Date
     """
